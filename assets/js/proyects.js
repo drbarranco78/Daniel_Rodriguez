@@ -196,5 +196,5 @@ const params = new URLSearchParams(window.location.search);
       </div>
     `).join('');
   } else {
-    document.querySelector("#portfolio-details").innerHTML = "<p>Proyecto no encontrado.</p>";
+    // document.querySelector("#portfolio-details").innerHTML = "<p>Proyecto no encontrado.</p>";
   }
