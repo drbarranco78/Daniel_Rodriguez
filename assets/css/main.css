@@ -1274,3 +1274,43 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+
+.container-lang {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  z-index: 4; /* por encima de fondo y overlay */
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.lang-switch {
+  height: 40px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.lang-switch img {
+  position: relative !important;
+  width: 36px;
+  height: auto;
+  object-fit: contain;
+}
+.lang-switch img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+.lang-switch-active{
+  background-color: yellowgreen;
+  color: #494E53;
+  border-radius: 5px;
+}
