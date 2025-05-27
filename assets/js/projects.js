@@ -23,6 +23,8 @@ const projects = {
       "assets/img/projects/Timelink7.PNG",
       "assets/img/projects/Timelink8.PNG",
       "assets/img/projects/Timelink9.PNG",
+      "assets/img/projects/Timelink10.PNG",
+
 
     ]
   },
@@ -166,11 +168,12 @@ const projects = {
     title: "Diseño de interfaces web",
     category: "Página Web",
     client: "Trabajo de clase",
-    startDate: "15/09/2024",
-    endDate: "10/03/2025",
-    url: "https://drbarranco78.github.io/DWEC5_Music/",
+    startDate: "05/12/2023",
+    endDate: "10/12/2023",
+    // url: "https://drbarranco78.github.io/DWEC5_Music/",
     description: "Página web de contenido estático realizada con HTML y CSS utilizando Flex y Grid",
-    details: `Un proyecto académico de una aplicación web que permite a los usuarios gestionar reservas de pistas de pádel, añadiendo, eliminando y modificando reservas.`,
+    details: `Trabajo de clase que consiste en una página web de contenido estático, realizada con HTML y CSS, 
+    aplicando técnicas de maquetación moderna con Flexbox y Grid, así como transiciones y efectos visuales con CSS.`,
     images: [
       "assets/img/projects/diw1.PNG",
       "assets/img/projects/diw2.PNG",

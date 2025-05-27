@@ -23,6 +23,7 @@ const projects = {
       "assets/img/projects/Timelink7.PNG",
       "assets/img/projects/Timelink8.PNG",
       "assets/img/projects/Timelink9.PNG",
+      "assets/img/projects/Timelink10.PNG",
     ]
   },
 
@@ -83,101 +84,102 @@ const projects = {
     ]
   },
 
-music: {
-  title: "Music Box",
-  category: "Web Application",
-  client: "Class Assignment",
-  startDate: "04/19/2024",
-  endDate: "04/23/2024",
-  url: "https://drbarranco78.github.io/DWEC5_Music/",
-  description: "Class assignment on DOM manipulation and sound",
-  details: `A web application that allows users to interact with different elements on the page by dynamically manipulating the DOM using jQuery. Includes a music player and sound effects.`,
-  images: [
-    "assets/img/projects/dwectarea5_1.PNG",
-  ]
-},
+  music: {
+    title: "Music Box",
+    category: "Web Application",
+    client: "Class Assignment",
+    startDate: "04/19/2024",
+    endDate: "04/23/2024",
+    url: "https://drbarranco78.github.io/DWEC5_Music/",
+    description: "Class assignment on DOM manipulation and sound",
+    details: `A web application that allows users to interact with different elements on the page by dynamically manipulating the DOM using jQuery. Includes a music player and sound effects.`,
+    images: [
+      "assets/img/projects/dwectarea5_1.PNG",
+    ]
+  },
 
-super: {
-  title: "Supermarket",
-  category: "Android Application",
-  client: "Class Assignment",
-  startDate: "12/07/2022",
-  endDate: "12/17/2022",
-  // url: "https://drbarranco78.github.io/DWEC5_Music/",
-  description: "Mobile app for supermarket stock management",
-  details: `A simple mobile application project that allows users to manage supermarket stock by adding, deleting, and updating products using CRUD operations on a SQLite database. Includes search and filter features.`,
-  images: [
-    "assets/img/projects/super1.PNG",
-    "assets/img/projects/super2.PNG",
-    "assets/img/projects/super3.PNG",
-    "assets/img/projects/super4.PNG",
-    "assets/img/projects/super5.PNG",
-  ]
-},
+  super: {
+    title: "Supermarket",
+    category: "Android Application",
+    client: "Class Assignment",
+    startDate: "12/07/2022",
+    endDate: "12/17/2022",
+    // url: "https://drbarranco78.github.io/DWEC5_Music/",
+    description: "Mobile app for supermarket stock management",
+    details: `A simple mobile application project that allows users to manage supermarket stock by adding, deleting, and updating products using CRUD operations on a SQLite database. Includes search and filter features.`,
+    images: [
+      "assets/img/projects/super1.PNG",
+      "assets/img/projects/super2.PNG",
+      "assets/img/projects/super3.PNG",
+      "assets/img/projects/super4.PNG",
+      "assets/img/projects/super5.PNG",
+    ]
+  },
 
-burguer: {
-  title: "Burger Shop",
-  category: "Android Application",
-  client: "Class Assignment",
-  startDate: "10/14/2022",
-  endDate: "10/27/2022",
-  // url: "https://drbarranco78.github.io/DWEC5_Music/",
-  description: "Mobile app for ordering at a burger restaurant",
-  details: `An academic mobile app project that allows users to place orders at a burger restaurant by adding, deleting, and updating products.`,
-  images: [
-    "assets/img/projects/burguer1.PNG",
-    "assets/img/projects/burguer2.PNG",
-    "assets/img/projects/burguer3.PNG",
-    "assets/img/projects/burguer4.PNG",
-    "assets/img/projects/burguer5.PNG",
-    "assets/img/projects/burguer6.PNG"
-  ]
-},
-padelweb: {
-  title: "GoToPadel web",
-  category: "Web Application",
-  client: "Final Project of the Advanced Web Application Development Cycle",
-  startDate: "09/15/2024",
-  endDate: "03/10/2025",
-  // url: "https://drbarranco78.github.io/DWEC5_Music/",
-  description: "Web application for managing padel court reservations",
-  details: `Application developed as the Final Project of the Web Application Development Cycle (DAW), graded with a 10.
+  burguer: {
+    title: "Burger Shop",
+    category: "Android Application",
+    client: "Class Assignment",
+    startDate: "10/14/2022",
+    endDate: "10/27/2022",
+    // url: "https://drbarranco78.github.io/DWEC5_Music/",
+    description: "Mobile app for ordering at a burger restaurant",
+    details: `An academic mobile app project that allows users to place orders at a burger restaurant by adding, deleting, and updating products.`,
+    images: [
+      "assets/img/projects/burguer1.PNG",
+      "assets/img/projects/burguer2.PNG",
+      "assets/img/projects/burguer3.PNG",
+      "assets/img/projects/burguer4.PNG",
+      "assets/img/projects/burguer5.PNG",
+      "assets/img/projects/burguer6.PNG"
+    ]
+  },
+  padelweb: {
+    title: "GoToPadel web",
+    category: "Web Application",
+    client: "Final Project of the Advanced Web Application Development Cycle",
+    startDate: "09/15/2024",
+    endDate: "03/10/2025",
+    // url: "https://drbarranco78.github.io/DWEC5_Music/",
+    description: "Web application for managing padel court reservations",
+    details: `Application developed as the Final Project of the Web Application Development Cycle (DAW), graded with a 10.
             Allows users to register, log in, create and join padel matches, cancel participation, and receive notifications.
             Administrators can archive or cancel matches, manage users, and view relevant information.
             Integrates external APIs to show padel-related news and available courts by city, using a JSON file of Spanish cities to filter results.
             The backend is developed with Spring Boot, using Hibernate and JPA for data access, and exposes a REST API.
             The frontend is implemented with HTML5, CSS3, JavaScript, and jQuery.`,
-  images: [
-    "assets/img/projects/padelweb1.PNG",
-    "assets/img/projects/padelweb2.PNG",
-    "assets/img/projects/padelweb3.PNG",
-    "assets/img/projects/padelweb4.PNG",
-    "assets/img/projects/padelweb5.PNG",
-    "assets/img/projects/padelweb6.PNG",
-    "assets/img/projects/padelweb7.PNG",
-    "assets/img/projects/padelweb8.PNG",
-    "assets/img/projects/padelweb9.PNG",
-    "assets/img/projects/padelweb10.PNG",
-    "assets/img/projects/padelweb11.PNG",
-    "assets/img/projects/padelweb12.PNG",
-  ]
-},
+    images: [
+      "assets/img/projects/padelweb1.PNG",
+      "assets/img/projects/padelweb2.PNG",
+      "assets/img/projects/padelweb3.PNG",
+      "assets/img/projects/padelweb4.PNG",
+      "assets/img/projects/padelweb5.PNG",
+      "assets/img/projects/padelweb6.PNG",
+      "assets/img/projects/padelweb7.PNG",
+      "assets/img/projects/padelweb8.PNG",
+      "assets/img/projects/padelweb9.PNG",
+      "assets/img/projects/padelweb10.PNG",
+      "assets/img/projects/padelweb11.PNG",
+      "assets/img/projects/padelweb12.PNG",
+    ]
+  },
 
-diw: {
-  title: "Web Interface Design",
-  category: "Website",
-  client: "Class Assignment",
-  startDate: "09/15/2024",
-  endDate: "03/10/2025",
-  url: "https://drbarranco78.github.io/DWEC5_Music/",
-  description: "Static content website made with HTML and CSS using Flexbox and Grid",
-  details: `An academic project of a web application that allows users to manage padel court reservations by adding, deleting, and modifying bookings.`,
-  images: [
-    "assets/img/projects/diw1.PNG",
-    "assets/img/projects/diw2.PNG",
-    "assets/img/projects/diw3.PNG",
-  ]
-},
+  diw: {
+    title: "Web Interface Design",
+    category: "Website",
+    client: "Class Assignment",
+    startDate: "05/12/2023",
+    endDate: "10/12/2023",
+    // url: "https://drbarranco78.github.io/DWEC5_Music/",
+    description: "Static content website made with HTML and CSS using Flexbox and Grid",
+    details: `Class project consisting of a static content website built with HTML and CSS, 
+    using modern layout techniques with Flexbox and Grid, as well as CSS transitions and visual effects.`,
+    images: [
+      "assets/img/projects/diw1.PNG",
+      "assets/img/projects/diw2.PNG",
+      "assets/img/projects/diw3.PNG",
+    ]
+  },
 
 };
 const params = new URLSearchParams(window.location.search);
