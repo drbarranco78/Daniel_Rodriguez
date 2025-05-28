@@ -589,7 +589,7 @@ section,
 
 .hero p span {
   letter-spacing: 1px;
-  border-bottom: 2px solid var(--accent-color);
+  /* border-bottom: 2px solid var(--accent-color); */
 }
 
 .hero .social-links {
@@ -1313,4 +1313,7 @@ section,
   background-color: yellowgreen;
   color: #494E53;
   border-radius: 5px;
+}
+.grey-text {
+  color: #a8a9b4;
 }
