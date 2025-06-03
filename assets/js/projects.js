@@ -57,20 +57,20 @@ const projects = {
 
     ]
   },
-  diwtarea6: {
-    title: "DIW Tarea 6",
-    category: "Aplicación Web",
-    client: "Trabajo de clase",
-    startDate: "03/05/2024",
-    endDate: "09/05/2024",
-    url: "https://drbarranco78.github.io/Tarea6DIW2024/",
-    description: "Aplicación web inteactiva",
-    details: `Un proyecto sencillo de una aplicación web interactiva, que permite a los usuarios interactuar con diferentes elementos de la página, manipulando el DOM de forma dinámica con JQuery. `,
-    images: [
-      "assets/img/projects/Tarea6DIW1.PNG",
-      "assets/img/projects/Tarea6DIW2.PNG",
-    ]
-  },
+  // diwtarea6: {
+  //   title: "DIW Tarea 6",
+  //   category: "Aplicación Web",
+  //   client: "Trabajo de clase",
+  //   startDate: "03/05/2024",
+  //   endDate: "09/05/2024",
+  //   url: "https://drbarranco78.github.io/Tarea6DIW2024/",
+  //   description: "Aplicación web inteactiva",
+  //   details: `Un proyecto sencillo de una aplicación web interactiva, que permite a los usuarios interactuar con diferentes elementos de la página, manipulando el DOM de forma dinámica con JQuery. `,
+  //   images: [
+  //     "assets/img/projects/Tarea6DIW1.PNG",
+  //     "assets/img/projects/Tarea6DIW2.PNG",
+  //   ]
+  // },
   weather: {
     title: "Weather App",
     category: "Aplicación Web",
@@ -180,10 +180,20 @@ const projects = {
       "assets/img/projects/diw3.PNG",
     ]
   },
-
-
-
-
+  maps: {
+    title: "Map Weather",
+    category: "Aplicación móvil",
+    client: "Trabajo de clase",
+    startDate: "19/04/2023",
+    endDate: "21/04/2023",
+    // url: "https://drbarranco78.github.io/DWEC5_Music/",
+    description: "Aplicación móvil para la consulta del clima por ubicación",
+    details: `Trabajo de clase que consiste en una aplicación móvil que permite a los usuarios consultar el clima en función de su ubicación, 
+    utilizando la API de Google Maps y los sensores del dispositivo.`,
+    images: [
+      "assets/img/projects/pmdm6.PNG",
+    ]
+  },
 
 };
 
@@ -216,7 +226,7 @@ if (project) {
 
   // Rellenar imágenes del slider
   const swiperWrapper = document.querySelector(".swiper-wrapper");
-  const extraStyle = (projectId === "gotopadel" || projectId === "super" || projectId === "burguer") ? 'style="width: 300px; max-width: 100%; margin-left:32%"' : "";
+  const extraStyle = (projectId === "gotopadel" || projectId === "super" || projectId === "burguer" || projectId==="maps") ? 'style="width: 300px; max-width: 100%; margin-left:32%"' : "";
 
   swiperWrapper.innerHTML = project.images.map(src => `
       <div class="swiper-slide">

@@ -54,20 +54,20 @@ const projects = {
     ]
   },
 
-  diwtarea6: {
-    title: "DIW Task 6",
-    category: "Web Application",
-    client: "Class Assignment",
-    startDate: "05/03/2024",
-    endDate: "05/09/2024",
-    url: "https://drbarranco78.github.io/Tarea6DIW2024/",
-    description: "Interactive web application",
-    details: `A simple interactive web application project that allows users to interact with different elements on the page, manipulating the DOM dynamically with jQuery.`,
-    images: [
-      "assets/img/projects/Tarea6DIW1.PNG",
-      "assets/img/projects/Tarea6DIW2.PNG",
-    ]
-  },
+  // diwtarea6: {
+  //   title: "DIW Task 6",
+  //   category: "Web Application",
+  //   client: "Class Assignment",
+  //   startDate: "05/03/2024",
+  //   endDate: "05/09/2024",
+  //   url: "https://drbarranco78.github.io/Tarea6DIW2024/",
+  //   description: "Interactive web application",
+  //   details: `A simple interactive web application project that allows users to interact with different elements on the page, manipulating the DOM dynamically with jQuery.`,
+  //   images: [
+  //     "assets/img/projects/Tarea6DIW1.PNG",
+  //     "assets/img/projects/Tarea6DIW2.PNG",
+  //   ]
+  // },
 
   weather: {
     title: "Weather App",
@@ -164,22 +164,21 @@ const projects = {
     ]
   },
 
-  diw: {
-    title: "Web Interface Design",
-    category: "Website",
+  maps: {
+    title: "Map Weather",
+    category: "Mobile Application",
     client: "Class Assignment",
-    startDate: "05/12/2023",
-    endDate: "10/12/2023",
+    startDate: "04/19/2023",
+    endDate: "04/21/2023",
     // url: "https://drbarranco78.github.io/DWEC5_Music/",
-    description: "Static content website made with HTML and CSS using Flexbox and Grid",
-    details: `Class project consisting of a static content website built with HTML and CSS, 
-    using modern layout techniques with Flexbox and Grid, as well as CSS transitions and visual effects.`,
+    description: "Mobile application for weather consultation based on location",
+    details: `Class project consisting of a mobile application that allows users to check the weather based on their location,
+  using the Google Maps API and the device's sensors.`,
     images: [
-      "assets/img/projects/diw1.PNG",
-      "assets/img/projects/diw2.PNG",
-      "assets/img/projects/diw3.PNG",
+      "assets/img/projects/pmdm6.PNG",
     ]
   },
+
 
 };
 const params = new URLSearchParams(window.location.search);
@@ -211,7 +210,7 @@ if (project) {
 
   // Rellenar imágenes del slider
   const swiperWrapper = document.querySelector(".swiper-wrapper");
-  const extraStyle = (projectId === "gotopadel" || projectId === "super" || projectId === "burguer") ? 'style="width: 300px; max-width: 100%; margin-left:32%"' : "";
+  const extraStyle = (projectId === "gotopadel" || projectId === "super" || projectId === "burguer" || projectId === "maps") ? 'style="width: 300px; max-width: 100%; margin-left:32%"' : "";
 
   swiperWrapper.innerHTML = project.images.map(src => `
       <div class="swiper-slide">
