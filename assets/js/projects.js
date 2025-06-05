@@ -1,18 +1,26 @@
-// assets/js/projects.js
 const projects = {
   timelink: {
     title: "TimeLink",
     category: "Aplicación Web",
+    categoryEn: "Web Application",
     client: "Newtron Informática, SL",
     startDate: "15/01/2025",
     endDate: "30/03/2025",
     url: "https://timelink-bootstrap.onrender.com",
     description: "Aplicación Web de control horario de empleados",
+    descriptionEn: "Employee time tracking web application",
     details: `Aplicación desarrollada durante mis prácticas en Newtron Informática en 2025 para la gestión del control horario en empresas. 
               Permite registrar el inicio y fin de la jornada, así como los descansos, y generar informes exportables en varios formatos. Incorpora un sistema de envío de correos electrónicos para invitaciones y solicitudes de unión, además de integración con Stripe para gestionar suscripciones y pagos como solución SaaS. 
               El backend está desarrollado con PHP y Laravel, y el frontend utiliza Bootstrap, HTML, CSS y JavaScript con jQuery. 
               La base de datos es MySQL y se encuentra alojada en Alwaysdata, mientras que la aplicación está desplegada en Render.com. 
               Incluye un botón de pruebas que crea una empresa ficticia con varios empleados, permitiendo explorar todas las funcionalidades sin necesidad de registro.`,
+    detailsEn: `Application developed during my internship at Newtron Computers in 2025 for managing employee time tracking in companies. 
+              It allows users to log the start and end of their workday, as well as breaks, and generate exportable reports in various formats. 
+              It features an email system for invitations and join requests, along with Stripe integration to manage subscriptions and payments as a SaaS solution. 
+              The backend is built with PHP and Laravel, and the frontend uses Bootstrap, HTML, CSS, and JavaScript with jQuery. 
+              The database is MySQL and hosted on Alwaysdata, while the application is deployed on Render.com. 
+              A demo button is included to create a fictitious company with several employees, allowing users to explore all features without registration.`,
+
     images: [
       "assets/img/projects/Timelink1.PNG",
       "assets/img/projects/Timelink2.PNG",
@@ -24,22 +32,24 @@ const projects = {
       "assets/img/projects/Timelink8.PNG",
       "assets/img/projects/Timelink9.PNG",
       "assets/img/projects/Timelink10.PNG",
-
-
     ]
   },
 
   gotopadel: {
     title: "GoToPádel",
     category: "Aplicación Android",
+    categoryEn: "Android Application",
     client: "TFG del CFGS de Desarrollo de Aplicaciones Multiplataforma",
+    clientEn: "Final Degree Project of the Higher Degree in Cross-Platform Application Development",
     startDate: "15/09/2023",
     endDate: "20/04/2024",
-    // url: "https://github.com/usuario/gotopadel",
     description: "Aplicación Android para organización de partidos de pádel",
+    descriptionEn: "Android application for organizing padel matches",
     details: `Aplicación móvil desarrollada como Proyecto Final del Ciclo de Desarrollo de Aplicaciones Multiplataforma (DAM) durante el curso 2023/2024, con una calificación de 10. 
               GoToPádel permite crear y gestionar partidos de pádel, inscribirse, recibir notificaciones locales y gestionar usuarios mediante un sistema de autenticación. 
               Desarrollada con Android Studio, Java y SQLite para el almacenamiento local.`,
+    detailsEn: `Mobile application developed as the Final Degree Project of the Higher Degree in Cross-Platform 
+                Application Development (DAM) during the 2023/2024 academic year, graded 10.`,
 
     images: [
       "assets/img/projects/gotopadel1.PNG",
@@ -57,29 +67,22 @@ const projects = {
 
     ]
   },
-  // diwtarea6: {
-  //   title: "DIW Tarea 6",
-  //   category: "Aplicación Web",
-  //   client: "Trabajo de clase",
-  //   startDate: "03/05/2024",
-  //   endDate: "09/05/2024",
-  //   url: "https://drbarranco78.github.io/Tarea6DIW2024/",
-  //   description: "Aplicación web inteactiva",
-  //   details: `Un proyecto sencillo de una aplicación web interactiva, que permite a los usuarios interactuar con diferentes elementos de la página, manipulando el DOM de forma dinámica con JQuery. `,
-  //   images: [
-  //     "assets/img/projects/Tarea6DIW1.PNG",
-  //     "assets/img/projects/Tarea6DIW2.PNG",
-  //   ]
-  // },
+
   weather: {
     title: "Weather App",
     category: "Aplicación Web",
+    categoryEn: "Web Application",
     client: "Trabajo de clase",
+    clientEn: "Class Assignment",
     startDate: "30/04/2024",
     endDate: "02/05/2024",
     url: "https://drbarranco78.github.io/DWEC6_Weather/",
     description: "Aplicación web de previsión meteorológica",
-    details: `Un trabajo de clase de una aplicación web de previsión meteorológica, que utiliza la API de OpenStretMap y VisualCrossing para obtener datos meteorológicos en tiempo real. Los usuarios pueden buscar por ciudad y ver la previsión del tiempo.`,
+    descriptionEn: "Weather forecasting web application",
+    details: `Un trabajo de clase de una aplicación web de previsión meteorológica, que utiliza la API de OpenStretMap y 
+    VisualCrossing para obtener datos meteorológicos en tiempo real. Los usuarios pueden buscar por ciudad y ver la previsión del tiempo.`,
+    detailsEn: `A class assignment for a weather forecasting web application that uses the OpenStreetMap and VisualCrossing APIs to obtain real-time weather data. 
+                Users can search by city and view the weather forecast.`,
     images: [
       "assets/img/projects/dwectarea6_1.PNG",
       "assets/img/projects/dwectarea6_2.PNG",
@@ -88,12 +91,18 @@ const projects = {
   music: {
     title: "Music Box",
     category: "Aplicación Web",
+    categoryEn: "Web Application",
     client: "Trabajo de clase",
+    clientEn: "Class Assignment",
     startDate: "19/04/2024",
     endDate: "23/04/2024",
     url: "https://drbarranco78.github.io/DWEC5_Music/",
     description: "Tarea de clase sobre manipulación del DOM y sonido",
-    details: `Una aplicación web que permite a los usuarios interactuar con diferentes elementos de la página, manipulando el DOM de forma dinámica con JQuery. Incluye un reproductor de música y efectos de sonido.`,
+    descriptionEn: "Class assignment on DOM manipulation and sound",
+    details: `Una aplicación web que permite a los usuarios interactuar con diferentes elementos de la página, 
+    manipulando el DOM de forma dinámica con JQuery. Incluye un reproductor de música y efectos de sonido.`,
+    detailsEn: `A web application that allows users to interact with different elements of the page, dynamically manipulating the DOM with jQuery. 
+                It includes a music player and sound effects.`,
     images: [
       "assets/img/projects/dwectarea5_1.PNG",
     ]
@@ -101,12 +110,17 @@ const projects = {
   super: {
     title: "Supermercado",
     category: "Aplicación Android",
+    categoryEn: "Android Application",
     client: "Trabajo de clase",
+    clientEn: "Class Assignment",
     startDate: "07/12/2022",
     endDate: "17/12/2022",
-    // url: "https://drbarranco78.github.io/DWEC5_Music/",
     description: "Aplicación móvil de gestión de stock de un supermercado",
-    details: `Un proyecto sencillo de una aplicación móvil que permite a los usuarios gestionar el stock de un supermercado, añadiendo, eliminando y modificando productos mediante operaciones CRUD sobre una base de datos SQLite. Incluye funcionalidades de búsqueda y filtrado.`,
+    descriptionEn: "Mobile application for managing supermarket stock",
+    details: `Un proyecto sencillo de una aplicación móvil que permite a los usuarios gestionar el stock de un supermercado, añadiendo, 
+              eliminando y modificando productos mediante operaciones CRUD sobre una base de datos SQLite. Incluye funcionalidades de búsqueda y filtrado.`,
+    detailsEn: `A simple project of a mobile application that allows users to manage supermarket stock by adding, deleting, and modifying products 
+                through CRUD operations on a SQLite database. It includes search and filtering functionalities.`,
     images: [
       "assets/img/projects/super1.PNG",
       "assets/img/projects/super2.PNG",
@@ -118,12 +132,16 @@ const projects = {
   burguer: {
     title: "Hamburguesería",
     category: "Aplicación Android",
+    categoryEn: "Android Application",
     client: "Trabajo de clase",
+    clientEn: "Class Assignment",
     startDate: "14/10/2022",
     endDate: "27/10/2022",
-    // url: "https://drbarranco78.github.io/DWEC5_Music/",
     description: "Aplicación móvil para realizar pedidos en una hamburguesería",
-    details: `Un proyecto académico de una aplicación móvil que permite a los usuarios realizar pedidos en una hamburguesería, añadiendo, eliminando y modificando productos.`,
+    descriptionEn: "Mobile application for placing orders at a burger restaurant",
+    details: `Un proyecto académico de una aplicación móvil que permite a los usuarios realizar pedidos en una hamburguesería, 
+              añadiendo, eliminando y modificando productos.`,
+    detailsEn: `An academic project of a mobile application that allows users to place orders at a burger restaurant by adding, deleting, and modifying products.`,
     images: [
       "assets/img/projects/burguer1.PNG",
       "assets/img/projects/burguer2.PNG",
@@ -137,17 +155,25 @@ const projects = {
   padelweb: {
     title: "GoToPadel web",
     category: "Aplicación Web",
+    categoryEn: "Web Application",
     client: "Proyecto final del CFGS de Desarrollo de Aplicaciones Web",
+    clientEn: "Final Degree Project of the Higher Degree in Web Application Development",
     startDate: "15/09/2024",
     endDate: "10/03/2025",
-    // url: "https://drbarranco78.github.io/DWEC5_Music/",
     description: "Aplicación web para la gestión de reservas de pistas de pádel",
-    details: `Aplicación desarrollada como Proyecto Final del Ciclo de Desarrollo de Aplicaciones Web (DAW), calificada con un 10.
-              Permite a los usuarios registrarse, iniciar sesión, crear y unirse a partidos de pádel, cancelar su participación y recibir notificaciones.
-              Los administradores pueden archivar o cancelar partidos, gestionar usuarios y visualizar información relevante.
-              Integra APIs externas para mostrar noticias relacionadas con el pádel y pistas disponibles por ciudad, utilizando un archivo JSON de ciudades españolas para filtrar los resultados.
-              El backend está desarrollado con Spring Boot, empleando Hibernate y JPA para el acceso a datos, y expone una API REST.
-              El frontend está implementado con HTML5, CSS3, JavaScript y jQuery.`,
+    descriptionEn: "Web application for managing padel court bookings",
+    details:   `Aplicación desarrollada como Proyecto Final del Ciclo de Desarrollo de Aplicaciones Web (DAW), calificada con un 10.
+                Permite a los usuarios registrarse, iniciar sesión, crear y unirse a partidos de pádel, cancelar su participación y recibir notificaciones.
+                Los administradores pueden archivar o cancelar partidos, gestionar usuarios y visualizar información relevante.
+                Integra APIs externas para mostrar noticias relacionadas con el pádel y pistas disponibles por ciudad, utilizando un archivo JSON de ciudades españolas para filtrar los resultados.
+                El backend está desarrollado con Spring Boot, empleando Hibernate y JPA para el acceso a datos, y expone una API REST.
+                El frontend está implementado con HTML5, CSS3, JavaScript y jQuery.`,
+    detailsEn: `Application developed as the Final Degree Project of the Higher Degree in Web Application Development (DAW), graded 10.
+                It allows users to register, log in, create and join padel matches, cancel their participation, and receive notifications.
+                Administrators can archive or cancel matches, manage users, and view relevant information.
+                It integrates external APIs to display news related to padel and courts available by city, using a JSON file of Spanish cities to filter results.
+                The backend is developed with Spring Boot, using Hibernate and JPA for data access, and exposes a REST API.
+                The frontend is implemented with HTML5, CSS3, JavaScript, and jQuery.`,
     images: [
       "assets/img/projects/padelweb1.PNG",
       "assets/img/projects/padelweb2.PNG",
@@ -167,13 +193,18 @@ const projects = {
   diw: {
     title: "Diseño de interfaces web",
     category: "Página Web",
+    categoryEn: "Web Page",
     client: "Trabajo de clase",
+    clientEn: "Class Assignment",
     startDate: "05/12/2023",
     endDate: "10/12/2023",
-    // url: "https://drbarranco78.github.io/DWEC5_Music/",
     description: "Página web de contenido estático realizada con HTML y CSS utilizando Flex y Grid",
+    descriptionEn: "Static content web page created with HTML and CSS using Flexbox and Grid",
     details: `Trabajo de clase que consiste en una página web de contenido estático, realizada con HTML y CSS, 
-    aplicando técnicas de maquetación moderna con Flexbox y Grid, así como transiciones y efectos visuales con CSS.`,
+              aplicando técnicas de maquetación moderna con Flexbox y Grid, así como transiciones y efectos visuales con CSS.`,
+    detailsEn: `Class assignment that consists of a static content web page, created with HTML and CSS,
+                applying modern layout techniques with Flexbox and Grid, as well as transitions and visual effects with CSS.`,   
+    
     images: [
       "assets/img/projects/diw1.PNG",
       "assets/img/projects/diw2.PNG",
@@ -183,13 +214,17 @@ const projects = {
   maps: {
     title: "Map Weather",
     category: "Aplicación móvil",
+    categoryEn: "Mobile Application",
     client: "Trabajo de clase",
+    clientEn: "Class Assignment",
     startDate: "19/04/2023",
     endDate: "21/04/2023",
-    // url: "https://drbarranco78.github.io/DWEC5_Music/",
     description: "Aplicación móvil para la consulta del clima por ubicación",
+    descriptionEn: "Mobile application for weather consultation by location",
     details: `Trabajo de clase que consiste en una aplicación móvil que permite a los usuarios consultar el clima en función de su ubicación, 
     utilizando la API de Google Maps y los sensores del dispositivo.`,
+    detailsEn: `Class assignment that consists of a mobile application that allows users to check the weather based on their location, 
+                using the Google Maps API and device sensors.`,
     images: [
       "assets/img/projects/pmdm6.PNG",
     ]
@@ -197,42 +232,3 @@ const projects = {
 
 };
 
-const params = new URLSearchParams(window.location.search);
-const projectId = params.get("id");
-const project = projects[projectId];
-
-if (project) {
-  // Rellenar info general
-  document.querySelector(".portfolio-info h3").textContent = `Proyecto: ${project.title}`;
-
-  let infoHTML = `
-    <li><strong>Categoría</strong>: ${project.category}</li>
-    <li><strong>Cliente</strong>: ${project.client}</li>
-    <li><strong>Fecha de Inicio</strong>: ${project.startDate}</li>
-    <li><strong>Fecha de Entrega</strong>: ${project.endDate}</li>
-  `;
-
-  if (project.url) {
-    infoHTML += `
-      <li><strong>URL</strong>: <a href="${project.url}" target="_blank" rel="noopener noreferrer">${project.url}</a></li>
-    `;
-  }
-
-  document.querySelector(".portfolio-info ul").innerHTML = infoHTML;
-  document.querySelector(".portfolio-description h2").textContent = project.description;
-  document.querySelector(".portfolio-description p").textContent = project.details;
-
-
-
-  // Rellenar imágenes del slider
-  const swiperWrapper = document.querySelector(".swiper-wrapper");
-  const extraStyle = (projectId === "gotopadel" || projectId === "super" || projectId === "burguer" || projectId==="maps") ? 'style="width: 300px; max-width: 100%; margin-left:32%"' : "";
-
-  swiperWrapper.innerHTML = project.images.map(src => `
-      <div class="swiper-slide">
-        <img src="${src}" alt="" ${extraStyle}>
-      </div>
-    `).join('');
-} else {
-  // document.querySelector("#portfolio-details").innerHTML = "<p>Proyecto no encontrado.</p>";
-}

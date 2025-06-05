@@ -94,7 +94,7 @@
 
       <div class="container-lang">
         <div>
-          <button class="lang-switch lang-switch-active" data-lang="es">
+          <button id="lang-switch-es" class="lang-switch lang-switch-active" data-lang="es">
             <img src="assets/img/flags/spain_flag.png" alt="Español"> Español
           </button>
         </div>
@@ -105,7 +105,8 @@
         </div>
       </div>
 
-      <!-- <img id="img-background" src="assets/img/fondo-codigo.jpg" alt="" data-aos="fade-in" class=""> -->
+      <img id="img-background" src="assets/img/fondo_linkedin5.png" alt="" data-aos="fade-in" class=""
+        style="filter: opacity(0.2) grayscale(30%);">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Daniel Rodríguez Barranco</h2>
@@ -133,12 +134,7 @@
           </div>
           <div class="col-lg-8 content">
             <h2>Desarrollador de Aplicaciones Web y Android</h2>
-            <!-- <p class="fst-italic py-3">
-              Aprendo rápido. Si me das un problema, no duermo hasta resolverlo.
-            </p> -->
-            <!-- <p class="fst-italic py-3">
-              Me apasiona resolver problemas con código y crear herramientas que hagan la vida más fácil.
-            </p> -->
+
             <p>Soy un desarrollador comprometido con una formación técnica sólida y experiencia tanto en frontend como
               en backend, además del desarrollo de aplicaciones Android. Me adapto con facilidad a diferentes entornos y
               tecnologías, y afronto cada proyecto con responsabilidad, iniciativa y atención al detalle. Disfruto
@@ -166,13 +162,6 @@
                 </ul>
               </div>
             </div>
-
-            <!-- <p>Soy un desarrollador comprometido con una formación técnica sólida y experiencia tanto en frontend como
-              en backend, además del desarrollo de aplicaciones Android. Me adapto con facilidad a diferentes entornos y
-              tecnologías, y afronto cada proyecto con responsabilidad, iniciativa y atención al detalle. Disfruto
-              resolviendo problemas y aprendiendo continuamente, ya sea de forma autodidacta o en equipo. En mi tiempo
-              libre me gusta cocinar, practicar pádel y seguir explorando nuevas ideas mediante proyectos personales de
-              programación.</p> -->
 
           </div>
         </div>
@@ -422,8 +411,10 @@
               <h4>CFGS - Desarrollo de Aplicaciones Multiplataforma</h4>
               <h5>2021 - 2024</h5>
               <p><em>IES Aguadulce, Almería, España</em></p>
-              <p>Aprendí programación orientada a objetos en Java, Python y C#, desarrollo de aplicaciones Android y fundamentos de
-                bases de datos (SQLite, MySQL, PostgreSQL), además de principios de diseño de software y trabajo en entornos
+              <p>Aprendí programación orientada a objetos en Java, Python y C#, desarrollo de aplicaciones Android y
+                fundamentos de
+                bases de datos (SQLite, MySQL, PostgreSQL), además de principios de diseño de software y trabajo en
+                entornos
                 multiplataforma.</p>
             </div><!-- End Resume Item -->
 
@@ -507,7 +498,7 @@
                       class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->            
+            </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
@@ -811,9 +802,8 @@
               data-aos-delay="200">
               <input type="hidden" name="_captcha" value="false">
               <input type="hidden" name="_next"
-                value="https://drbarranco78.github.io/Daniel_Rodriguez_Portfolio/?sent=true#contact">
+                value="https://drbarranco78.github.io/Daniel_Rodriguez/?sent=true#contact">
 
-              <!-- <input type="hidden" name="_next" value="https://drbarranco78.github.io/Daniel_Rodriguez_Portfolio/"> -->
               <div class="row gy-4">
                 <div class="col-md-6">
                   <label for="name-field" class="pb-2">Tu nombre</label>
@@ -894,8 +884,9 @@
 
 
   <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
   <script src="assets/js/projects.js"></script>
+  <script src="assets/js/main.js"></script>
+
 
   <script>
     const params2 = new URLSearchParams(window.location.search);

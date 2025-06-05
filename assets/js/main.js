@@ -226,30 +226,71 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
-  // function setLanguage(lang) {
-  //   document.querySelectorAll("[data-" + lang + "]").forEach(el => {
-  //     el.innerText = el.getAttribute("data-" + lang);
-  //   });
-  // }
-
-
-  document.querySelectorAll('.lang-switch').forEach(button => {
-  button.addEventListener('click', function () {
-    if (this.classList.contains('lang-switch-active')) return;
-
-    // Elimina la clase activa de todos los botones
-    document.querySelectorAll('.lang-switch').forEach(switcher => {
-      switcher.classList.remove('lang-switch-active');
-    });
-
-    // Añade la clase activa al botón clicado
-    this.classList.add('lang-switch-active');
-
-    // Obtiene el idioma y redirige
-    const lang = this.getAttribute('data-lang');
-    window.location.href = lang === 'es' ? 'index.html' : 'index_en.html';
-  });
-});
-
-
 })();
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.lang-switch').forEach(button => {
+    button.addEventListener('click', function () {
+      if (this.classList.contains('lang-switch-active')) return;
+
+      document.querySelectorAll('.lang-switch').forEach(switcher => {
+        switcher.classList.remove('lang-switch-active');
+      });
+
+      this.classList.add('lang-switch-active');
+
+      const lang = this.getAttribute('data-lang');
+      localStorage.setItem('lang', lang);
+
+      window.location.href = lang === 'es' ? 'index.html' : 'index_en.html';
+    });
+  });
+  const params = new URLSearchParams(window.location.search);
+  const projectId = params.get("id");
+  const project = projects[projectId];
+  let infoHTML = "";
+
+  const lang = localStorage.getItem("lang") || "es";
+  const languajeES = lang === "es";
+
+  if (project) {
+    document.querySelector(".portfolio-info h3").textContent = `Project: ${project.title}`;
+    console.log (languajeES);
+
+    if (languajeES) {
+      infoHTML = `
+        <li><strong>Categoría</strong>: ${project.category}</li>
+        <li><strong>Cliente</strong>: ${project.client}</li>
+        <li><strong>Fecha de Inicio</strong>: ${project.startDate}</li>
+        <li><strong>Fecha de Entrega</strong>: ${project.endDate}</li>
+      `;
+    } else {
+      infoHTML = `
+        <li><strong>Category</strong>: ${project.categoryEn}</li>
+        <li><strong>Client</strong>: ${project.clientEn}</li>
+        <li><strong>Start Date</strong>: ${project.startDate}</li>
+        <li><strong>End Date</strong>: ${project.endDate}</li>
+      `;
+    }
+
+    if (project.url) {
+      infoHTML += `
+        <li><strong>URL</strong>: <a href="${project.url}" target="_blank" rel="noopener noreferrer">${project.url}</a></li>
+      `;
+    }
+
+    document.querySelector(".portfolio-info ul").innerHTML = infoHTML;
+    document.querySelector(".portfolio-description h2").textContent = languajeES ? project.description : project.descriptionEn;
+    document.querySelector(".portfolio-description p").textContent = languajeES ? project.details : project.detailsEn;
+
+    // Rellenar imágenes del slider
+    const swiperWrapper = document.querySelector(".swiper-wrapper");
+    const extraStyle = (projectId === "gotopadel" || projectId === "super" || projectId === "burguer" || projectId === "maps") ? 'style="width: 300px; max-width: 100%; margin-left:32%"' : "";
+
+    swiperWrapper.innerHTML = project.images.map(src => `
+      <div class="swiper-slide">
+        <img src="${src}" alt="" ${extraStyle}>
+      </div>`).join('');
+  }
+});
