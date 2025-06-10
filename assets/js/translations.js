@@ -1,6 +1,11 @@
 const translations = {
-  es: {      
-      hero_typed_items: "Técnico Superior en Desarrollo de Aplicaciones Web y Multiplataforma, Desarrollo Backend | Frontend | Android | Java | JavaScript | PHP | Laravel | SpringBoot | Bootstrap | Tailwind,",
+  es: {
+    hero_typed_items:
+      "Técnico Superior en Desarrollo de Aplicaciones Web y Multiplataforma^800," +
+      "Desarrollo Backend | Frontend ^800<br>" +
+      "Android | Java | JavaScript | PHP ^800<br>" +
+      "Laravel | SpringBoot | Bootstrap | Tailwind"
+
   },
   en: {
     site_role: "Web & Android Developer",
@@ -9,23 +14,25 @@ const translations = {
     nav_resume: "Resume",
     nav_portfolio: "Projects",
     nav_services: "Certifications",
-    nav_contact: "Contact",    
-    hero_typed_items: "Senior Technician in Web and Multiplatform Application Development, Backend Development | Frontend | Android | Java | JavaScript | PHP | Laravel | SpringBoot | Bootstrap | Tailwind",
+    nav_contact: "Contact",
+    hero_typed_items: "Senior Technician in Web and Multiplatform Application Development^800," +
+    "Backend | Frontend Development ^800<br>" +
+    "Android | Java | JavaScript | PHP ^800<br>" +
+    "Laravel | SpringBoot | Bootstrap | Tailwind",
     about_text: "Since I was a child, technology has been my greatest passion. I started tinkering with Basic programs and taking apart any gadget I could find. That curiosity led me to become a developer — a path I’ve pursued enthusiastically after completing my training in Web and Multiplatform App Development.",
     about_subtitle: "Web and Android Application Developer",
     about_paragraph: "I’m a developer with solid technical training and experience in both frontend and backend development, as well as Android apps. I adapt easily to different environments and technologies, and I approach every project with responsibility, initiative, and attention to detail. I enjoy problem-solving and continuous learning — whether self-taught or in a team setting. In my free time, I like cooking, playing padel, and exploring new ideas through personal programming projects.",
-    about_birth: "Date of birth:",
+    about_birth: "Birthplace:",
     about_phone: "Phone:",
     about_email: "Email:",
-    about_city: "City:",
+    about_city: "Current Location:",
     about_languages: "Languages:",
     about_languages_value: "Spanish (native), English (B2)",
     about_interests: "Interests:",
     about_interests_value: "Backend, AI, Big Data",
     stats_android_desc: "Native apps with Java and XML",
     stats_laravel_desc: "Back and front with Blade, Vite, and Bootstrap",
-    stats_sql_desc: "MySQL, SQLite, PostgreSQL, and relational modeling",
-    stats_git_title: "Version Control",
+    stats_sql_desc: "MySQL, SQLite, PostgreSQL, and relational modeling",    
     stats_testing_desc: "JUnit, Mockito, PHPUnit, Postman, functional validation",
     stats_linux_desc: "Command line, scripting, and basic configuration",
     skills_title: "Skills",
