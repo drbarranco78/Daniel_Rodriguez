@@ -1,7 +1,6 @@
 const translations = {
-  es: {
-    hero_subtitle: "Técnico Superior en Desarrollo de Aplicaciones",
-    hero_typed_items: "Multiplataforma, Web, Android",
+  es: {      
+      hero_typed_items: "Técnico Superior en Desarrollo de Aplicaciones Web y Multiplataforma, Desarrollo Backend | Frontend | Android | Java | JavaScript | PHP | Laravel | SpringBoot | Bootstrap | Tailwind,",
   },
   en: {
     site_role: "Web & Android Developer",
@@ -10,9 +9,8 @@ const translations = {
     nav_resume: "Resume",
     nav_portfolio: "Projects",
     nav_services: "Certifications",
-    nav_contact: "Contact",
-    hero_subtitle: "Senior Technician in Application Development",
-    hero_typed_items: "Multiplatform, Web",
+    nav_contact: "Contact",    
+    hero_typed_items: "Senior Technician in Web and Multiplatform Application Development, Backend Development | Frontend | Android | Java | JavaScript | PHP | Laravel | SpringBoot | Bootstrap | Tailwind",
     about_text: "Since I was a child, technology has been my greatest passion. I started tinkering with Basic programs and taking apart any gadget I could find. That curiosity led me to become a developer — a path I’ve pursued enthusiastically after completing my training in Web and Multiplatform App Development.",
     about_subtitle: "Web and Android Application Developer",
     about_paragraph: "I’m a developer with solid technical training and experience in both frontend and backend development, as well as Android apps. I adapt easily to different environments and technologies, and I approach every project with responsibility, initiative, and attention to detail. I enjoy problem-solving and continuous learning — whether self-taught or in a team setting. In my free time, I like cooking, playing padel, and exploring new ideas through personal programming projects.",
@@ -72,7 +70,7 @@ const translations = {
     super_description: "Mobile application for managing supermarket stock",
     burguer_description: "Mobile application for placing orders at a burger restaurant",
     padelweb_description: "Web application for managing padel court bookings",
-    maps_description: "Mobile application for weather consultation by location",    
+    maps_description: "Mobile application for weather consultation by location",
     certifications_title: "Certifications",
     certifications_description: "Certifications obtained through courses and technical evaluations in various areas of development and IT systems. I am currently continuing my training to acquire new skills and stay up to date in the field.",
     cert_dam_title: "Multiplatform Application Development",

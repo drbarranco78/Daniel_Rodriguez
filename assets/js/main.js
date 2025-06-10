@@ -106,7 +106,9 @@
         loop: true,
         typeSpeed: 20,
         backSpeed: 20,
-        backDelay: 2000
+        backDelay: 2000,
+        //smartBackspace: false, // Evita borrar solo la diferencia entre cadenas
+        startDelay: 300,
       });
     }
   }
