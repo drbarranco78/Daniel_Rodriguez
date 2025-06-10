@@ -108,7 +108,7 @@ const projects = {
     ]
   },
   super: {
-    title: "Supermercado",
+    title: "Supermarket",
     category: "Aplicación Android",
     categoryEn: "Android Application",
     client: "Trabajo de clase",
@@ -130,7 +130,7 @@ const projects = {
     ]
   },
   burguer: {
-    title: "Hamburguesería",
+    title: "Burguers",
     category: "Aplicación Android",
     categoryEn: "Android Application",
     client: "Trabajo de clase",
@@ -153,7 +153,7 @@ const projects = {
   },
 
   padelweb: {
-    title: "GoToPadel web",
+    title: "GoToPadel Web",
     category: "Aplicación Web",
     categoryEn: "Web Application",
     client: "Proyecto final del CFGS de Desarrollo de Aplicaciones Web",
@@ -189,28 +189,7 @@ const projects = {
       "assets/img/projects/padelweb12.PNG",
     ]
   },
-
-  diw: {
-    title: "Diseño de interfaces web",
-    category: "Página Web",
-    categoryEn: "Web Page",
-    client: "Trabajo de clase",
-    clientEn: "Class Assignment",
-    startDate: "05/12/2023",
-    endDate: "10/12/2023",
-    description: "Página web de contenido estático realizada con HTML y CSS utilizando Flex y Grid",
-    descriptionEn: "Static content web page created with HTML and CSS using Flexbox and Grid",
-    details: `Trabajo de clase que consiste en una página web de contenido estático, realizada con HTML y CSS, 
-              aplicando técnicas de maquetación moderna con Flexbox y Grid, así como transiciones y efectos visuales con CSS.`,
-    detailsEn: `Class assignment that consists of a static content web page, created with HTML and CSS,
-                applying modern layout techniques with Flexbox and Grid, as well as transitions and visual effects with CSS.`,   
     
-    images: [
-      "assets/img/projects/diw1.PNG",
-      "assets/img/projects/diw2.PNG",
-      "assets/img/projects/diw3.PNG",
-    ]
-  },
   maps: {
     title: "Map Weather",
     category: "Aplicación móvil",
@@ -231,4 +210,6 @@ const projects = {
   },
 
 };
+
+
 

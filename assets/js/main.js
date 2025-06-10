@@ -92,17 +92,23 @@
   /**
    * Init typed.js
    */
-  const selectTyped = document.querySelector('.typed');
-  if (selectTyped) {
-    let typed_strings = selectTyped.getAttribute('data-typed-items');
-    typed_strings = typed_strings.split(',');
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 20,
-      backSpeed: 20,
-      backDelay: 2000
-    });
+  let typedInstance = null;
+  window.initTyped = function () {
+    const selectTyped = document.querySelector('.typed');
+    if (selectTyped) {
+      if (typedInstance) {
+        typedInstance.destroy();
+      }
+      let typed_strings = selectTyped.getAttribute('data-typed-items');
+      typed_strings = typed_strings.split(',');
+      typedInstance = new Typed('.typed', {
+        strings: typed_strings,
+        loop: true,
+        typeSpeed: 20,
+        backSpeed: 20,
+        backDelay: 2000
+      });
+    }
   }
 
   /**
@@ -228,8 +234,20 @@
 
 })();
 
-
 document.addEventListener("DOMContentLoaded", () => {
+  initTyped();
+  const defaultLang = "es";
+  const savedLang = localStorage.getItem("lang") || defaultLang;
+  setLanguaje(savedLang);
+  console.log("Language set to:", savedLang);
+
+  if (window.location.pathname === "/index.html") {
+    document.querySelectorAll('.lang-switch').forEach(button => {
+      button.classList.remove('lang-switch-active');
+    });
+    document.querySelector(`.lang-switch[data-lang="${savedLang}"]`).classList.add('lang-switch-active');
+  }
+
   document.querySelectorAll('.lang-switch').forEach(button => {
     button.addEventListener('click', function () {
       if (this.classList.contains('lang-switch-active')) return;
@@ -242,10 +260,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const lang = this.getAttribute('data-lang');
       localStorage.setItem('lang', lang);
-
-      window.location.href = lang === 'es' ? 'index.html' : 'index_en.html';
+      setLanguaje(lang);
     });
   });
+
+  function setLanguaje(lang) {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+
+      if (!el.dataset.original) {
+        el.dataset.original = el.textContent;
+      }
+
+      if (lang === "en" && translations[lang] && translations[lang][key]) {
+        if (el.classList.contains("typed")) {
+          el.setAttribute("data-typed-items", translations[lang][key]);
+        } else {
+          el.textContent = translations[lang][key];
+        }
+      } else {
+        if (el.classList.contains("typed")) {
+          el.setAttribute("data-typed-items", translations["es"]["hero_typed_items"]);
+        } else {
+          el.textContent = el.dataset.original;
+        }
+      }
+    });
+    // Reiniciar el efecto Typed
+    initTyped();
+  }
+
   const params = new URLSearchParams(window.location.search);
   const projectId = params.get("id");
   const project = projects[projectId];
@@ -255,8 +299,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const languajeES = lang === "es";
 
   if (project) {
-    document.querySelector(".portfolio-info h3").textContent = `Project: ${project.title}`;
-    console.log (languajeES);
+    setLanguaje(lang);
+    document.querySelector(".portfolio-info h3").textContent = languajeES ? `Proyecto: ${project.title}` : `Project: ${project.title}`;
+    console.log(languajeES);
 
     if (languajeES) {
       infoHTML = `
