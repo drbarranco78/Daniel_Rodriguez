@@ -271,20 +271,20 @@ document.addEventListener("DOMContentLoaded", () => {
       const key = el.getAttribute('data-i18n');
 
       if (!el.dataset.original) {
-        el.dataset.original = el.textContent;
+        el.dataset.original = el.innerHTML;
       }
 
       if (lang === "en" && translations[lang] && translations[lang][key]) {
         if (el.classList.contains("typed")) {
           el.setAttribute("data-typed-items", translations[lang][key]);
         } else {
-          el.textContent = translations[lang][key];
+          el.innerHTML = translations[lang][key];
         }
       } else {
         if (el.classList.contains("typed")) {
           el.setAttribute("data-typed-items", translations["es"]["hero_typed_items"]);
         } else {
-          el.textContent = el.dataset.original;
+          el.innerHTML = el.dataset.original;
         }
       }
     });
