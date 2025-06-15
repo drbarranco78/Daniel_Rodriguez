@@ -111,5 +111,10 @@ const translations = {
     contact_address_title: "Address",
     contact_address_text: "Costa Adeje (Tenerife, Canary Islands)",
     contact_phone_title: "Phone",
+    contact_name_label: "Your Name",
+    contact_email_label: "Your Email",
+    contact_subject_label: "Subject",
+    contact_message_label: "Message",
+    contact_submit_button: "Send Message",
   }
 };
