@@ -68,45 +68,45 @@ const projects = {
     ]
   },
 
-  weather: {
-    title: "Weather App",
-    category: "Aplicación Web",
-    categoryEn: "Web Application",
-    client: "Trabajo de clase",
-    clientEn: "Class Assignment",
-    startDate: "30/04/2024",
-    endDate: "02/05/2024",
-    url: "https://drbarranco78.github.io/DWEC6_Weather/",
-    description: "Aplicación web de previsión meteorológica",
-    descriptionEn: "Weather forecasting web application",
-    details: `Un trabajo de clase de una aplicación web de previsión meteorológica, que utiliza la API de OpenStretMap y 
-    VisualCrossing para obtener datos meteorológicos en tiempo real. Los usuarios pueden buscar por ciudad y ver la previsión del tiempo.`,
-    detailsEn: `A class assignment for a weather forecasting web application that uses the OpenStreetMap and VisualCrossing APIs to obtain real-time weather data. 
-                Users can search by city and view the weather forecast.`,
-    images: [
-      "assets/img/projects/dwectarea6_1.PNG",
-      "assets/img/projects/dwectarea6_2.PNG",
-    ]
-  },
-  music: {
-    title: "Music Box",
-    category: "Aplicación Web",
-    categoryEn: "Web Application",
-    client: "Trabajo de clase",
-    clientEn: "Class Assignment",
-    startDate: "19/04/2024",
-    endDate: "23/04/2024",
-    url: "https://drbarranco78.github.io/DWEC5_Music/",
-    description: "Tarea de clase sobre manipulación del DOM y sonido",
-    descriptionEn: "Class assignment on DOM manipulation and sound",
-    details: `Una aplicación web que permite a los usuarios interactuar con diferentes elementos de la página, 
-    manipulando el DOM de forma dinámica con JQuery. Incluye un reproductor de música y efectos de sonido.`,
-    detailsEn: `A web application that allows users to interact with different elements of the page, dynamically manipulating the DOM with jQuery. 
-                It includes a music player and sound effects.`,
-    images: [
-      "assets/img/projects/dwectarea5_1.PNG",
-    ]
-  },
+  // weather: {
+  //   title: "Weather App",
+  //   category: "Aplicación Web",
+  //   categoryEn: "Web Application",
+  //   client: "Trabajo de clase",
+  //   clientEn: "Class Assignment",
+  //   startDate: "30/04/2024",
+  //   endDate: "02/05/2024",
+  //   url: "https://drbarranco78.github.io/DWEC6_Weather/",
+  //   description: "Aplicación web de previsión meteorológica",
+  //   descriptionEn: "Weather forecasting web application",
+  //   details: `Un trabajo de clase de una aplicación web de previsión meteorológica, que utiliza la API de OpenStretMap y 
+  //   VisualCrossing para obtener datos meteorológicos en tiempo real. Los usuarios pueden buscar por ciudad y ver la previsión del tiempo.`,
+  //   detailsEn: `A class assignment for a weather forecasting web application that uses the OpenStreetMap and VisualCrossing APIs to obtain real-time weather data. 
+  //               Users can search by city and view the weather forecast.`,
+  //   images: [
+  //     "assets/img/projects/dwectarea6_1.PNG",
+  //     "assets/img/projects/dwectarea6_2.PNG",
+  //   ]
+  // },
+  // music: {
+  //   title: "Music Box",
+  //   category: "Aplicación Web",
+  //   categoryEn: "Web Application",
+  //   client: "Trabajo de clase",
+  //   clientEn: "Class Assignment",
+  //   startDate: "19/04/2024",
+  //   endDate: "23/04/2024",
+  //   url: "https://drbarranco78.github.io/DWEC5_Music/",
+  //   description: "Tarea de clase sobre manipulación del DOM y sonido",
+  //   descriptionEn: "Class assignment on DOM manipulation and sound",
+  //   details: `Una aplicación web que permite a los usuarios interactuar con diferentes elementos de la página, 
+  //   manipulando el DOM de forma dinámica con JQuery. Incluye un reproductor de música y efectos de sonido.`,
+  //   detailsEn: `A web application that allows users to interact with different elements of the page, dynamically manipulating the DOM with jQuery. 
+  //               It includes a music player and sound effects.`,
+  //   images: [
+  //     "assets/img/projects/dwectarea5_1.PNG",
+  //   ]
+  // },
   super: {
     title: "Supermarket",
     category: "Aplicación Android",
