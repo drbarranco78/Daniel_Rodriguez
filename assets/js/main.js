@@ -342,7 +342,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   document.getElementById("downloadCV").addEventListener("click", function () {
-    fetch("http://cv-service-env.eba-ec7cavvk.eu-north-1.elasticbeanstalk.com/api/cv/pdf", {
+    fetch("https://cv-service-production.up.railway.app/api/cv/pdf", {
       method: "GET",
       headers: {
         "Content-Type": "application/pdf"
