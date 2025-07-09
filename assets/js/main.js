@@ -340,4 +340,33 @@ document.addEventListener("DOMContentLoaded", () => {
         <img src="${src}" alt="" ${extraStyle}>
       </div>`).join('');
   }
+
+  document.getElementById("downloadCV").addEventListener("click", function () {
+    fetch("http://cv-service-env.eba-ec7cavvk.eu-north-1.elasticbeanstalk.com/api/cv/pdf", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/pdf"
+      },
+    })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.blob();
+      })
+      .then(blob => {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "Daniel_Rodriguez_CV.pdf"; // Nombre del archivo al descargar
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url); // Liberar memoria
+      })
+      .catch(error => {
+        console.error("Error downloading CV:", error);
+      });
+  });
+
 });
