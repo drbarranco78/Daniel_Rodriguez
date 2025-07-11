@@ -342,7 +342,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   document.getElementById("downloadCV").addEventListener("click", function () {
-    fetch("https://cv-service-production.up.railway.app/api/cv/pdf", {
+    fetch("https://cv.homescout.es/api/cv/pdf", {
       method: "GET",
       headers: {
         "Content-Type": "application/pdf"
