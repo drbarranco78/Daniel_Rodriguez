@@ -34,6 +34,27 @@ const projects = {
       "assets/img/projects/Timelink10.PNG",
     ]
   },
+  converter: {
+    title: "Currency Converter",
+    category: "Aplicación Web",
+    categoryEn: "Web Application",
+    client: "Personal Project",
+    startDate: "09/07/2025",
+    endDate: "11/07/2025",
+    url: "https://converter.homescout.es/",
+    description: "Aplicación Web de conversión de divisas",
+    descriptionEn: "Currency conversion web application",
+    details: `Un proyecto personal de un sencillo microservicio que permite a los usuarios convertir divisas utilizando la API de ExchangeRate-API. 
+              La aplicación permite seleccionar dos divisas y realizar la conversión en tiempo real, mostrando el resultado de la conversión.
+              El backend está desarrollado con Spring Boot y el frontend utiliza React y Tailwind CSS. La aplicación está desplegada en alwaysdata`,
+    detailsEn: `A personal project of a simple microservice that allows users to convert currencies using the ExchangeRate-API. 
+              The application lets users select two currencies and perform real-time conversion, displaying the conversion result. 
+              The backend is developed with Spring Boot while the frontend uses React and Tailwind CSS. The application is deployed on alwaysdata.`,
+
+    images: [
+      "assets/img/projects/converter1.JPG",  
+    ]
+  },
 
   gotopadel: {
     title: "GoToPádel",
