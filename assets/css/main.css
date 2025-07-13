@@ -1336,6 +1336,7 @@ section,
 .equal-height {
   height: 100%;
   min-height: 350px; 
+  max-height: 350PX;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 10px;
