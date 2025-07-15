@@ -341,11 +341,11 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>`).join('');
   }
 
-  document.getElementById("downloadCV").addEventListener("click", function () {
-    fetch("https://cv.drbarranco.es/api/cv/pdf", {
+  function downloadCV(english = false) {
+    fetch(`https://cv.drbarranco.es/api/cv/pdf?${english}`, {
       method: "GET",
       headers: {
-        "Content-Type": "application/pdf"
+        "Content-Type": "application/pdf",        
       },
     })
       .then(response => {
@@ -358,7 +358,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const url = URL.createObjectURL(blob);
         const a = document.createElement("a");
         a.href = url;
-        a.download = "Daniel_Rodriguez_CV.pdf"; // Nombre del archivo al descargar
+        a.download = english ? "Daniel_Rodriguez_CV_EN.pdf" : "Daniel_Rodriguez_CV.pdf";
         document.body.appendChild(a);
         a.click();
         a.remove();
@@ -367,6 +367,14 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch(error => {
         console.error("Error downloading CV:", error);
       });
+  }
+
+  document.getElementById("downloadCV").addEventListener("click", function () {
+    downloadCV();
+  });
+
+  document.getElementById("downloadCV-en").addEventListener("click", function () {
+    downloadCV(true);
   });
 
 });

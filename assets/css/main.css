@@ -1360,3 +1360,24 @@ section,
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
+.flag-icon-bg {
+  display: inline-block;
+  width: 24px;
+  height: 16px;
+  background: url("../../assets/img/flags/spain_flag.png") no-repeat center center / cover;
+  margin-right: 8px;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+
+.flag-icon-en {
+  display: inline-block;
+  width: 24px;
+  height: 16px;
+  background: url("../../assets/img/flags/england_flag.png") no-repeat center center / cover;
+  margin-right: 8px;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+
+
