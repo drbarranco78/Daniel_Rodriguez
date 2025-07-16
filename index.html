@@ -59,14 +59,15 @@
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
-    <div class="profile-img">
+    <!-- <div class="profile-img">
       <img src="assets/img/fotoPerfil.jpg" alt="" class="img-fluid rounded-circle">
-    </div>
+    </div> -->
 
     <a href="index.html" class="logo d-flex flex-column align-items-center justify-content-center">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename mb-2">Daniel Rodríguez</h1><span class="grey-text" data-i18n="site_role">Programador Web y
+      <h1 class="sitename mb-2 mt-5">Daniel Rodríguez</h1><span class="grey-text mb-2" data-i18n="site_role">Programador
+        Web y
         Android</span>
 
     </a>
@@ -125,7 +126,7 @@
     </section><!-- /Hero Section -->
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
+    <section id="portfolio" class="portfolio section dark-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -723,7 +724,7 @@
     </section><!-- /Portfolio Section -->
 
     <!-- About Section -->
-    <section id="about" class="about section light-background">
+    <section id="about" class="about section dark-background">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2 data-i18n="nav_about">Sobre Mí</h2>
@@ -744,10 +745,10 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
+          <!-- <div class="col-lg-4">
             <img src="assets/img/fondo_linkedin5.png" class="img-fluid" alt="Fondo de código">
-          </div>
-          <div class="col-lg-8 content">
+          </div> -->
+          <div class="content">
             <h2 data-i18n="about_subtitle">Desarrollador de Aplicaciones Web y Android</h2>
 
             <p data-i18n="about_paragraph">Soy un desarrollador comprometido con una formación técnica sólida y
@@ -794,87 +795,12 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- Skills Highlights Section -->
-    <section id="stats" class="stats section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
-          <!-- Desarrollo Android -->
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-phone"></i>
-              <p><strong>Android Studio</strong> <span data-i18n="stats_android_desc">Apps nativas con Java y XML</span>
-              </p>
-            </div>
-          </div>
-
-          <!-- Desarrollo Web -->
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-globe"></i>
-              <p><strong>Laravel & PHP</strong> <span data-i18n="stats_laravel_desc">Back y front con Blade, Vite y
-                  Bootstrap</span></p>
-            </div>
-          </div>
-
-          <!-- Spring Boot -->
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-box-seam"></i>
-              <p><strong>Spring Boot</strong> <span>REST APIs, MVC, JDBC y JPA</span></p>
-            </div>
-          </div>
-
-          <!-- Bases de datos -->
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-database"></i>
-              <p><strong>SQL</strong> <span data-i18n="stats_sql_desc">MySQL, SQLite, PostgreSQL y modelado
-                  relacional</span></p>
-            </div>
-          </div>
-
-          <!-- Git y GitHub -->
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-git"></i>
-              <p><strong>Version Control</strong> <span>Git, GitHub & GitHub
-                  Pages</span></p>
-            </div>
-          </div>
-
-          <!-- HTML, CSS y JS -->
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-file-earmark-code"></i>
-              <p><strong>Frontend</strong> <span>HTML5, CSS3, JS, JQuery, Bootstrap, React</span></p>
-            </div>
-          </div>
-
-          <!-- Testing / Pruebas -->
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-bug"></i>
-              <p><strong>Testing</strong> <span data-i18n="stats_testing_desc">JUnit, Mockito, PHPUnit, Postman,
-                  validación funcional</span></p>
-            </div>
-          </div>
-
-          <!-- Administración básica de sistemas -->
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-terminal"></i>
-              <p><strong>Linux</strong> <span data-i18n="stats_linux_desc">Consola, scripts y configuración
-                  básica</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End Skills Highlights Section -->
-
+    
     <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
+    <section id="skills" class="skills section dark-background">
+
       <div class="container section-title" data-aos="fade-up">
-        <h2 data-i18n="skills_title">Habilidades</h2>
+        <h2 data-i18n="skills_title">Tecnologías</h2>
         <p data-i18n="skills_description">Competencias técnicas que he desarrollado durante mi formación en DAW y DAM, y
           que estoy consolidando con
           práctica y aprendizaje continuo.</p>
@@ -883,95 +809,109 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row skills-content skills-animation">
 
-          <div class="col-lg-6">
+         
 
-            <div class="progress">
-              <span class="skill"><span>HTML5</span> <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                </div>
+          <div class="row text-center">
+
+            <div class="col-md-3 mb-4">
+              <div class="d-flex flex-column align-items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="60"
+                  height="60" alt="HTML5">
+                <p class="mt-2"><strong>HTML5</strong></p>
               </div>
             </div>
 
-            <div class="progress">
-              <span class="skill"><span>CSS3</span> <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                </div>
+            <div class="col-md-3 mb-4">
+              <div class="d-flex flex-column align-items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="60"
+                  height="60" alt="CSS3">
+                <p class="mt-2"><strong>CSS3</strong></p>
               </div>
             </div>
 
-            <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-                </div>
+            <div class="col-md-3 mb-4">
+              <div class="d-flex flex-column align-items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  width="60" height="60" alt="JavaScript">
+                <p class="mt-2"><strong>JavaScript</strong></p>
               </div>
             </div>
 
-            <div class="progress">
-              <span class="skill"><span>Bootstrap</span> <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                </div>
+            <div class="col-md-3 mb-4">
+              <div class="d-flex flex-column align-items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                  width="60" height="60" alt="Bootstrap">
+                <p class="mt-2"><strong>Bootstrap</strong></p>
               </div>
             </div>
 
-            <div class="progress">
-              <span class="skill"><span>MySQL / SQLite</span> <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                </div>
+            <div class="col-md-3 mb-4">
+              <div class="d-flex flex-column align-items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="60"
+                  height="60" alt="MySQL">
+                <p class="mt-2"><strong>MySQL / SQLite</strong></p>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <div class="d-flex flex-column align-items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="60"
+                  height="60" alt="Java">
+                <p class="mt-2"><strong>Java</strong></p>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <div class="d-flex flex-column align-items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="60"
+                  height="60" alt="Spring Boot">
+                <p class="mt-2"><strong>Spring Boot</strong></p>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <div class="d-flex flex-column align-items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" width="60"
+                  height="60" alt="Android Studio">
+                <p class="mt-2"><strong>Android Studio</strong></p>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <div class="d-flex flex-column align-items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="60"
+                  height="60" alt="PHP">
+                <p class="mt-2"><strong>PHP</strong></p>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <div class="d-flex flex-column align-items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" width="60"
+                  height="60" alt="Laravel">
+                <p class="mt-2"><strong>Laravel</strong></p>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <div class="d-flex flex-column align-items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="60"
+                  height="60" alt="Git">
+                <p class="mt-2"><strong>Git & GitHub</strong></p>
+              </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <div class="d-flex flex-column align-items-center">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="60"
+                  height="60" alt="Docker">
+                <p class="mt-2"><strong>Docker</strong></p>
               </div>
             </div>
 
           </div>
 
-          <div class="col-lg-6">
 
-            <div class="progress">
-              <span class="skill"><span>Java</span> <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"><span>Spring Boot</span> <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"><span>Android Studio</span> <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"><span>PHP / Laravel</span> <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="progress">
-              <span class="skill"><span>Git & GitHub</span> <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-          </div>
 
         </div>
       </div>
@@ -979,7 +919,7 @@
 
 
     <!-- Resume Section -->
-    <section id="resume" class="resume section">
+    <section id="resume" class="resume section dark-background">
       <div class="container section-title" data-aos="fade-up">
         <h2 data-i18n="resume_section_title">Currículum Vitae</h2>
         <p data-i18n="resume_intro">Técnico Superior en Desarrollo de Aplicaciones Web (DAW) y Desarrollo de
@@ -1085,7 +1025,7 @@
 
 
     <!-- Certifications Section -->
-    <section id="services" class="services section">
+    <section id="services" class="services section dark-background">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2 data-i18n="certifications_title">Certificaciones</h2>
@@ -1238,7 +1178,7 @@
     </section><!-- End Certifications Section -->
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section light-background">
+    <section id="contact" class="contact section dark-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -1337,7 +1277,7 @@
 
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
+  <footer id="footer" class="footer position-relative dark-background">
 
     <div class="container">
       <div class="copyright text-center ">

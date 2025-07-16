@@ -342,10 +342,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function downloadCV(english = false) {
-    fetch(`https://cv.drbarranco.es/api/cv/pdf?${english}`, {
+    const preloader = document.querySelector('#preloader');
+    if (preloader) preloader.style.display = 'block'; // Mostrar loader
+
+    fetch(`https://cv.drbarranco.es/api/cv/pdf?english=${english}`, {
       method: "GET",
       headers: {
-        "Content-Type": "application/pdf",        
+        "Content-Type": "application/pdf",
       },
     })
       .then(response => {
@@ -362,10 +365,14 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.appendChild(a);
         a.click();
         a.remove();
-        URL.revokeObjectURL(url); // Liberar memoria
+        URL.revokeObjectURL(url);
       })
       .catch(error => {
         console.error("Error downloading CV:", error);
+        alert("Ocurrió un error al descargar el CV. Inténtalo de nuevo más tarde.");
+      })
+      .finally(() => {
+        if (preloader) preloader.style.display = 'none'; // Ocultar loader
       });
   }
 
@@ -376,5 +383,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("downloadCV-en").addEventListener("click", function () {
     downloadCV(true);
   });
+
 
 });
