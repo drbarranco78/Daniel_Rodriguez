@@ -51,7 +51,8 @@
   const preloader = document.querySelector('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
-      preloader.remove();
+      // preloader.remove();
+      preloader.style.display = "none";
     });
   }
 
@@ -343,6 +344,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function downloadCV(english = false) {
     const preloader = document.querySelector('#preloader');
+    console.log(preloader);
     if (preloader) preloader.style.display = 'block'; // Mostrar loader
 
     fetch(`https://cv.drbarranco.es/api/cv/pdf?english=${english}`, {
