@@ -958,6 +958,7 @@ section,
 .services .service-item .description {
   line-height: 24px;
   font-size: 14px;
+  margin-top: 15px;
 }
 
 /*--------------------------------------------------------------
