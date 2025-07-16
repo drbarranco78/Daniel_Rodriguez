@@ -35,7 +35,7 @@ const translations = {
       "Laravel | SpringBoot | Bootstrap | Tailwind",
     about_text: "Since I was a child, technology has been my greatest passion. I started tinkering with Basic programs and taking apart any gadget I could find. That curiosity led me to become a developer — a path I’ve pursued enthusiastically after completing my training in Web and Multiplatform App Development.",
     about_subtitle: "Web and Android Application Developer",
-    about_paragraph: "I’m a developer with solid technical training and experience in both frontend and backend development, as well as Android apps. I adapt easily to different environments and technologies, and I approach every project with responsibility, initiative, and attention to detail. I enjoy problem-solving and continuous learning — whether self-taught or in a team setting. In my free time, I like cooking, playing padel, and exploring new ideas through personal programming projects.",
+    about_paragraph: "I'm a committed developer with a solid technical background and experience in both frontend and backend development, as well as Android application development. I adapt easily to different environments and technologies, and I approach each project with responsibility, initiative, and attention to detail. I enjoy solving problems with code — the more complex, the better.",
     about_birth: "Birthplace:",
     about_phone: "Phone:",
     about_email: "Email:",
@@ -71,6 +71,13 @@ const translations = {
         <li>Development of a mobile app in Java for hotel management.</li>
         <li>UI design using XML layouts.</li>
         <li>Data handling and communication using SQLite.</li>`,
+    resume_experience_cibernet_title: "IT Technician and Network Administrator",
+    resume_experience_cibernet_dates: "2007 – 2010",
+    resume_experience_cibernet_location: "Cibernet, Linares (Jaén), ES — self-owned business",
+    resume_experience_cibernet_task1: "Managed and maintained a local computer network in a cybercafé environment.",
+    resume_experience_cibernet_task2: "Installed, configured, and repaired computer hardware and software.",
+    resume_experience_cibernet_task3: "Sold and assembled custom-built computers for clients.",
+
     resume_education_title: "Education",
     resume_edu_daw_title: "Advanced Vocational Training - Web Application Development",
     resume_edu_daw_school: "IES Aguadulce, Almería, Spain",
