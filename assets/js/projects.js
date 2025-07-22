@@ -46,10 +46,10 @@ const projects = {
     descriptionEn: "Currency conversion web application",
     details: `Un proyecto personal de un sencillo microservicio que permite a los usuarios convertir divisas utilizando la API de ExchangeRate-API. 
               La aplicación permite seleccionar dos divisas y realizar la conversión en tiempo real, mostrando el resultado de la conversión.
-              El backend está desarrollado con Spring Boot y el frontend utiliza React y Tailwind CSS. La aplicación está desplegada en alwaysdata`,
+              El backend está desarrollado con Spring Boot y el frontend utiliza React y Tailwind CSS. La aplicación está desplegada en Alwaysdata`,
     detailsEn: `A personal project of a simple microservice that allows users to convert currencies using the ExchangeRate-API. 
               The application lets users select two currencies and perform real-time conversion, displaying the conversion result. 
-              The backend is developed with Spring Boot while the frontend uses React and Tailwind CSS. The application is deployed on alwaysdata.`,
+              The backend is developed with Spring Boot while the frontend uses React and Tailwind CSS. The application is deployed on Alwaysdata.`,
 
     images: [
       "assets/img/projects/converter1.JPG",  
