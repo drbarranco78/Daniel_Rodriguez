@@ -41,7 +41,7 @@ const projects = {
     client: "Personal Project",
     startDate: "09/07/2025",
     endDate: "11/07/2025",
-    url: "https://converter.homescout.es/",
+    url: "https://converter.drbarranco.es/",
     description: "Aplicación Web de conversión de divisas",
     descriptionEn: "Currency conversion web application",
     details: `Un proyecto personal de un sencillo microservicio que permite a los usuarios convertir divisas utilizando la API de ExchangeRate-API. 
