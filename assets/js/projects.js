@@ -181,6 +181,7 @@ const projects = {
     clientEn: "Final Degree Project of the Higher Degree in Web Application Development",
     startDate: "15/09/2024",
     endDate: "10/03/2025",
+    url: "https://padel.drbarranco.es/",
     description: "Aplicación web para la gestión de reservas de pistas de pádel",
     descriptionEn: "Web application for managing padel court bookings",
     details:   `Aplicación desarrollada como Proyecto Final del Ciclo de Desarrollo de Aplicaciones Web (DAW), calificada con un 10.
